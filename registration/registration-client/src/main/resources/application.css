@@ -674,6 +674,7 @@ Working on new Css by taleev
 	-fx-border-color: #005baa;
 	-fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.3), 5.0,
 		0.0, 0.0, 1.0);
+	-fx-font-size: 20.0px;
 }
 
 .preregFetchBtnStyle {
