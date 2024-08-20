@@ -10,7 +10,7 @@
       <children>
         <ImageView fx:id="mosipLogoImageViewInitialScreen" fitHeight="20.0" preserveRatio="true">
           <image>
-            <Image url="@../images/logo wuri.png" />
+            <Image url="@../images/logo-wuri.png" />
           </image>
         </ImageView>
         <Label style="-fx-text-fill: black;" text="%mosip.io" />
