@@ -6,26 +6,23 @@
 
 <BorderPane id="loginScreen" prefHeight="553.0" prefWidth="523.0" styleClass="loginBorderPaneStyle" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="io.mosip.registration.controller.auth.LoginController">
   <bottom>
-   <VBox id="footer-section">
+    <HBox id="footer-section">
       <children>
-        <!-- HBox for logo and Mosip.io on the first line -->
-        <HBox id="footer-section">
-          <ImageView fx:id="mosipLogoImageViewInitialScreen" fitHeight="20.0" preserveRatio="true">
-            <image>
-              <Image url="@../images/logo-wuri.png" />
-            </image>
-          </ImageView>
-          <Label style="-fx-text-fill: black; -fx-font-weight: bold;" text="Mosip.io" />
-          <Label text="  " />
-        </HBox>
-        <!-- HBox for the version information on the second line -->
-        <HBox id="footer-section">
-          <Label style="-fx-text-fill: black; -fx-font-weight: bold;" text="%regClientVersion" />
-          <Label text=" : " />
-          <Label style="-fx-text-fill: black; -fx-font-weight: bold;" fx:id="versionValueLabel" />
-        </HBox>
+        <Label style="-fx-text-fill: white;" text="%mosip.io" />
+        <ImageView fx:id="mosipLogoImageViewInitialScreen" fitHeight="20.0" preserveRatio="true">
+          <image>
+            <Image url="@../images/logo-wuri.png" />
+          </image>
+        </ImageView>
+        <Label style="-fx-text-fill: black;" text="Mosip.io" />
+        <Label text="  " />
+        <Label style="-fx-text-fill: white;" text="%regClientVersion" />
+        <Label style="-fx-text-fill: black;" text="%regClientVersion" />
+        <Label text=" : " />
+        <Label style="-fx-text-fill: white;" fx:id="versionValueLabel" />
+        <Label style="-fx-text-fill: black;" fx:id="versionValueLabel" />
       </children>
-    </VBox>
+    </HBox>
   </bottom>
   <right>
     <AnchorPane fx:id="contentPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="489.0">
