@@ -13,7 +13,7 @@
             <Image url="@../images/logo-wuri.png" />
           </image>
         </ImageView>
-        <Label style="-fx-text-fill: black;" text="%mosip.io" />
+        <Label style="-fx-text-fill: black;" text="Mosip.io" />
         <Label text="  " />
         <Label style="-fx-text-fill: black;" text="%regClientVersion" />
         <Label text=" : " />
