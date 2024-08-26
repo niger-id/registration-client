@@ -40,8 +40,9 @@ public class HomePage {
             biocorrectionImage = "#BIOMETRIC_CORRECTION";
 
     // eodProcesses
-    String eodApprovalImageView = "#eodApprovalImageView", reRegistrationImageView = "#reRegistrationImageView",
+    String eodApprovalImageView = "#eodApprovalImageView",
             viewReportsImageView = "#viewReportsImageView";
+    // reRegistrationImageView = "#reRegistrationImageView"
 
     public HomePage(FxRobot robot, Stage applicationPrimaryStage, Scene scene) {
         this.robot = robot;
@@ -168,13 +169,13 @@ public class HomePage {
         return new EodApprovalPage(robot);
     }
 
-    public void clickreRegistrationImageView(Stage applicationPrimaryStage, Scene scene) {
+    /*public void clickreRegistrationImageView(Stage applicationPrimaryStage, Scene scene) {
         try {
             waitsUtil.clickNodeAssert(reRegistrationImageView);
         } catch (Exception e) {
             logger.error("", e);
         }
-    }
+    }*/
 
     public void clickviewReportsImageView(Stage applicationPrimaryStage, Scene scene) {
         try {
