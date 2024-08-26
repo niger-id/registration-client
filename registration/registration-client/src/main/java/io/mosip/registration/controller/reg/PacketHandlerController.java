@@ -290,7 +290,7 @@ public class PacketHandlerController extends BaseController implements Initializ
 			setImage(remapImageView, RegistrationConstants.SYNC_IMG);
 			setImage(checkUpdatesImageView, RegistrationConstants.DWLD_PRE_REG_DATA_IMG);
 			setImage(eodApprovalImageView, RegistrationConstants.PENDING_APPROVAL_IMG);
-			setImage(reRegistrationImageView, RegistrationConstants.RE_REGISTRATION_IMG);		
+			//setImage(reRegistrationImageView, RegistrationConstants.RE_REGISTRATION_IMG);		
 			setImage(viewReportsImageView, RegistrationConstants.VIEW_REPORTS_IMG);
 			setImage(tickMarkImageView, RegistrationConstants.TICK_IMG);
 			setImage(updateOperatorBiometricsImageView, RegistrationConstants.UPDATE_OPERATOR_BIOMETRICS_IMG);
