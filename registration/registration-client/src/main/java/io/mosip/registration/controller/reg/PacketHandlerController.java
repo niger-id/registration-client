@@ -301,7 +301,7 @@ public class PacketHandlerController extends BaseController implements Initializ
 			}
 			setLastUpdateTime();
 			pendingApprovalCountLbl.setText(RegistrationUIConstants.getMessageLanguageSpecific(RegistrationUIConstants.NO_PENDING_APPLICATIONS));
-			reRegistrationCountLbl.setText(RegistrationUIConstants.getMessageLanguageSpecific(RegistrationUIConstants.NO_RE_REGISTER_APPLICATIONS));
+			//reRegistrationCountLbl.setText(RegistrationUIConstants.getMessageLanguageSpecific(RegistrationUIConstants.NO_RE_REGISTER_APPLICATIONS));
 
 			List<RegistrationApprovalDTO> pendingApprovalRegistrations = registrationApprovalService
 					.getEnrollmentByStatus(RegistrationClientStatusCode.CREATED.getCode());
