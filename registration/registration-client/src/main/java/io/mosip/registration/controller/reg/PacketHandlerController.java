@@ -95,8 +95,8 @@ public class PacketHandlerController extends BaseController implements Initializ
 	@FXML
 	private Label pendingApprovalCountLbl;
 
-	@FXML
-	private Label reRegistrationCountLbl;
+	//@FXML
+	//private Label reRegistrationCountLbl;
 
 	@FXML
 	private Label lastBiometricTime;
@@ -145,10 +145,10 @@ public class PacketHandlerController extends BaseController implements Initializ
 	private GridPane eodApprovalPane;
 	@FXML
 	private ImageView eodApprovalImageView;
-	@FXML
-	private GridPane reRegistrationPane;
-	@FXML
-	private ImageView reRegistrationImageView;
+	//@FXML
+	//private GridPane reRegistrationPane;
+	//@FXML
+	//private ImageView reRegistrationImageView;
 	@FXML
 	private GridPane dashBoardPane;
 	@FXML
@@ -312,10 +312,10 @@ public class PacketHandlerController extends BaseController implements Initializ
 				pendingApprovalCountLbl
 						.setText(pendingApprovalRegistrations.size() + " " + RegistrationUIConstants.getMessageLanguageSpecific(RegistrationUIConstants.APPLICATIONS));
 			}
-			if (!reRegisterRegistrations.isEmpty()) {
+			/*if (!reRegisterRegistrations.isEmpty()) {
 				reRegistrationCountLbl
 						.setText(reRegisterRegistrations.size() + " " + RegistrationUIConstants.getMessageLanguageSpecific(RegistrationUIConstants.APPLICATIONS));
-			}
+			}*/
 
 			Timestamp ts = userOnboardService.getLastUpdatedTime(SessionContext.userId());
 			if (ts != null) {
@@ -364,13 +364,13 @@ public class PacketHandlerController extends BaseController implements Initializ
 				setImage(eodApprovalImageView, RegistrationConstants.PENDING_APPROVAL_IMG);
 			}
 		});
-		reRegistrationPane.hoverProperty().addListener((ov, oldValue, newValue) -> {
+		/*reRegistrationPane.hoverProperty().addListener((ov, oldValue, newValue) -> {
 			if (newValue) {
 				setImage(reRegistrationImageView, RegistrationConstants.RE_REGISTRATION_FOCUSED_IMG);	
 			} else {
 				setImage(reRegistrationImageView, RegistrationConstants.RE_REGISTRATION_IMG);	
 			}
-		});
+		});*/
 		dashBoardPane.hoverProperty().addListener((ov, oldValue, newValue) -> {
 			if (newValue) {
 				setImage(viewReportsImageView, RegistrationConstants.VIEW_REPORTS_FOCUSED_IMG);
@@ -661,7 +661,7 @@ public class PacketHandlerController extends BaseController implements Initializ
 	/**
 	 * Load re registration screen.
 	 */
-	public void loadReRegistrationScreen() {
+	/*public void loadReRegistrationScreen() {
 		if (!proceedOnReRegistrationAction()) {
 			return;
 		}
@@ -685,7 +685,7 @@ public class PacketHandlerController extends BaseController implements Initializ
 			generateAlert(RegistrationConstants.ERROR, RegistrationUIConstants.getMessageLanguageSpecific(RegistrationUIConstants.UNABLE_LOAD_APPROVAL_PAGE));
 		}
 		LOGGER.info(PACKET_HANDLER, APPLICATION_NAME, APPLICATION_ID, "Loading re-registration screen ended.");
-	}
+	}*/
 
 	public void viewDashBoard() {
 
