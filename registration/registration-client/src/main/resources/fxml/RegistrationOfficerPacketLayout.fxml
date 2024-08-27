@@ -377,7 +377,7 @@
                                     </rowConstraints>
                                 </GridPane>
                                 <GridPane fx:id="dashBoardPane" onMouseClicked="#viewDashBoard"
-                                          styleClass="operationalPaneDetailsBioUpdate" GridPane.rowIndex="2">
+                                          styleClass="operationalPaneDetailsBioUpdate" GridPane.rowIndex="1">
                                     <children>
                                         <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0"
                                               GridPane.columnIndex="1">
