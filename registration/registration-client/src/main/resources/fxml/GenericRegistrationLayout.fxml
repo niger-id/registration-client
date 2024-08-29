@@ -35,7 +35,7 @@
          </rowConstraints>
          <children>
             <Button fx:id="next" alignment="BASELINE_CENTER" mnemonicParsing="false" styleClass="contiuneButton" text="%continue" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <Button fx:id="authenticate" alignment="BASELINE_CENTER" mnemonicParsing="false" styleClass="contiuneButton" text="%authenticate" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="authenticate" alignment="BASELINE_CENTER" mnemonicParsing="false" styleClass="contiuneButton" text="%authenticate" GridPane.columnIndex="1" GridPane.rowIndex="1" defaultButton="true" />
             <Label fx:id="notification" alignment="TOP_LEFT" mnemonicParsing="false" styleClass="registrationErrorMsg" wrapText="true" GridPane.halignment="LEFT" GridPane.hgrow="SOMETIMES" GridPane.rowIndex="1" GridPane.vgrow="SOMETIMES" />
          </children>
       </GridPane>
